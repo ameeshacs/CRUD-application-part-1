@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <VBox layoutX="34.0" layoutY="45.0" prefHeight="177.0" prefWidth="62.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="43.0" text="ID">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="33.0" text="Title">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Author">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Year">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pages">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox layoutX="98.0" layoutY="45.0" prefHeight="177.0" prefWidth="191.0" spacing="12.5">
+               <children>
+                  <TextField fx:id="tfID" />
+                  <TextField fx:id="tfTitle" />
+                  <TextField fx:id="tfAuthor" />
+                  <TextField fx:id="tfYear" />
+                  <TextField fx:id="tfPages" />
+               </children>
+            </VBox>
+            <TableView fx:id="tvBooks" layoutX="299.0" layoutY="29.0" prefHeight="360.0" prefWidth="492.0">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="57.333343505859375" text="ID" />
+                <TableColumn fx:id="colTitle" prefWidth="155.33334350585938" text="Title" />
+                  <TableColumn fx:id="colAuthor" prefWidth="132.6666259765625" text="Author" />
+                  <TableColumn fx:id="colYear" prefWidth="74.0" text="Year" />
+                  <TableColumn fx:id="colPages" prefWidth="71.33331298828125" text="Pages" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnInsert" layoutX="45.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="62.0" text="Insert" />
+            <Button fx:id="btnUpdate" layoutX="123.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="78.0" text="Update" />
+            <Button fx:id="btnDelete" layoutX="219.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="70.0" text="Delete" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
